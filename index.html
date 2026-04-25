@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Villa Caldera — 4-bedroom luxury villa in Oia, Santorini. Private infinity pool overlooking the caldera, 8 guests. Book direct and save 10%.">
+  <meta property="og:title" content="Villa Caldera — Oia, Santorini, Greece">
+  <meta property="og:description" content="Infinity pool · Caldera views · 4 bedrooms · 8 guests · Book direct">
+  <meta property="og:image" content="https://images.pexels.com/photos/1010640/pexels-photo-1010640.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://villa-caldera.pages.dev/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#fafbfc">
+  <title>Villa Caldera — Luxury Villa Oia Santorini | Infinity Pool & Caldera Views</title>
+  <meta name="keywords" content="luxury villa Santorini, villa Oia Santorini, caldera view villa, Santorini infinity pool villa, private villa Santorini 8 guests, vacation rental Santorini">
+  <link rel="canonical" href="https://villa-caldera.pages.dev/">
+  <link rel="alternate" hreflang="en" href="https://villa-caldera.pages.dev/">
+  <link rel="alternate" hreflang="el" href="https://villa-caldera.pages.dev/el/">
+  <link rel="alternate" hreflang="fr" href="https://villa-caldera.pages.dev/fr/">
+  <link rel="alternate" hreflang="de" href="https://villa-caldera.pages.dev/de/">
+  <link rel="alternate" hreflang="it" href="https://villa-caldera.pages.dev/it/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Villa Caldera",
+    "description": "Villa Caldera is a 4-bedroom luxury villa in Oia, Santorini, with a private infinity pool overlooking the caldera. Sleeps 8 guests.",
+    "url": "https://villa-caldera.pages.dev",
+    "telephone": "+306940000001",
+    "priceRange": "€€€€",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Oia",
+      "addressRegion": "Santorini",
+      "postalCode": "847 02",
+      "addressCountry": "GR"
+    },
+    "geo": {"@type": "GeoCoordinates", "latitude": 36.4618, "longitude": 25.3753},
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.97", "reviewCount": "34"},
+    "numberOfRooms": 4,
+    "occupancy": {"@type": "QuantitativeValue", "maxValue": 8}
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap"></noscript>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── CYCLADIC MINIMAL — Villa Caldera override ── */
+    :root {
+      --cream:       #fafbfc;
+      --cream-dark:  #eef1f5;
+      --terracotta:  #1e5c9b;
+      --olive:       #4b8ec8;
+      --olive-dark:  #0f3d72;
+      --dark:        #0d1b2a;
+      --stone:       #7a8fa8;
+      --text:        #1a2533;
+      --font-serif:  'Playfair Display', Georgia, serif;
+      --font-sans:   'Inter', -apple-system, sans-serif;
+    }
+    body { background: var(--cream); }
+    /* Hero — full caldera view */
+    .hero-bg {
+      background-image: url('https://images.pexels.com/photos/1010640/pexels-photo-1010640.jpeg?auto=compress&cs=tinysrgb&w=1920&q=85') !important;
+    }
+    .hero-overlay { background: linear-gradient(to bottom, rgba(13,27,42,0.35) 0%, rgba(13,27,42,0.55) 100%) !important; }
+    /* Cooler nav */
+    #nav.scrolled { background: rgba(250,251,252,0.97) !important; }
+    /* Aegean accent on eyebrow */
+    .eyebrow { color: var(--terracotta); letter-spacing: 2.5px; }
+    /* Stats bar */
+    .stats-bar { background: var(--dark); }
+    /* Feature images */
+    .editorial-img img { filter: brightness(1.03) saturate(0.92); }
+    /* Footer cool */
+    footer { background: var(--dark); }
+    /* Btn */
+    .btn-dark { background: var(--dark); }
+    .btn-dark:hover { background: var(--olive-dark); }
+    .btn-terracotta { background: var(--terracotta); }
+    .btn-terracotta:hover { background: var(--olive-dark); }
+    /* Nav hover */
+    .nav-links a:hover { color: var(--terracotta); }
+    #nav.scrolled .nav-logo { color: var(--dark); }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#" class="nav-logo">Villa Caldera</a>
+  <ul class="nav-links">
+    <li><a href="#about">The Villa</a></li>
+    <li><a href="#amenities">Amenities</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#book" class="nav-book">Book Direct</a></li>
+  </ul>
+  <button class="nav-burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" class="mob-link">The Villa</a>
+  <a href="#amenities" class="mob-link">Amenities</a>
+  <a href="#gallery" class="mob-link">Gallery</a>
+  <a href="#location" class="mob-link">Location</a>
+  <a href="#book" class="mob-book">Book Direct</a>
+</div>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow" style="color:rgba(255,255,255,0.7)">Oia · Santorini · Greece</p>
+    <h1>The Caldera,<br><em>Entirely Yours.</em></h1>
+    <p>4 bedrooms &nbsp;·&nbsp; Infinity pool &nbsp;·&nbsp; 8 guests</p>
+    <div class="hero-btns">
+      <a href="#book" class="btn btn-dark">Book Direct — Save 10%</a>
+      <a href="#gallery" class="btn btn-outline-light">View Gallery</a>
+    </div>
+  </div>
+  <div class="hero-scroll" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div id="intro">
+    <div class="inner">
+      <p class="eyebrow">Oia, Santorini</p>
+      <h2>Where the Aegean Meets the Sky</h2>
+      <div class="divider"></div>
+      <p>Perched on the volcanic rim above Santorini's caldera, Villa Caldera is a four-bedroom private estate with an infinity pool that dissolves into 180° of open sea. The property is designed in the Cycladic tradition — whitewashed stone, vaulted ceilings, cool interiors that breathe in the island heat — and finished to a standard that matches the view.</p>
+      <br>
+      <p>Oia is a 12-minute walk. The airport is 25 minutes. Between the two, you have the caldera to yourselves: sunrise over the Aegean, blue-domed evenings, and a pool that catches the last light of every day.</p>
+    </div>
+  </div>
+</section>
+
+<div class="stats-bar">
+  <div class="stat"><span class="stat-num">4</span><span class="stat-label">Bedrooms</span></div>
+  <div class="stat"><span class="stat-num">8</span><span class="stat-label">Guests</span></div>
+  <div class="stat"><span class="stat-num">4.97</span><span class="stat-label">Airbnb Rating</span></div>
+  <div class="stat"><span class="stat-num">34</span><span class="stat-label">5-Star Reviews</span></div>
+</div>
+
+<div class="editorial">
+  <div class="editorial-img">
+    <img src="https://images.pexels.com/photos/6507880/pexels-photo-6507880.jpeg?auto=compress&cs=tinysrgb&w=900&q=80" alt="Villa Caldera infinity pool overlooking the Santorini caldera" loading="lazy">
+  </div>
+  <div class="editorial-text">
+    <p class="eyebrow">The Pool</p>
+    <h3>An Infinity Edge Over Open Water</h3>
+    <p>The 12-metre heated infinity pool aligns perfectly with the caldera rim, vanishing into the Aegean at the horizon. There is no more dramatic swimming pool on the island — and it is entirely private.</p>
+    <p>Submerged sunbeds at the shallow end, a pool bar along the southern edge, and a sun terrace with daybeds facing the volcanic islands of Nea Kameni. Sunrise to sunset, the light changes every hour.</p>
+  </div>
+</div>
+
+<div class="editorial reverse">
+  <div class="editorial-img">
+    <img src="https://images.pexels.com/photos/10611832/pexels-photo-10611832.jpeg?auto=compress&cs=tinysrgb&w=900&q=80" alt="Villa Caldera interior bedroom with caldera views, Santorini" loading="lazy">
+  </div>
+  <div class="editorial-text">
+    <p class="eyebrow">The Interiors</p>
+    <h3>Cycladic Architecture, Refined</h3>
+    <p>Four bedroom suites with vaulted ceilings and cave-cut walls keep the spaces naturally cool through the Aegean summer. Each suite opens onto a private terrace — two directly onto the caldera.</p>
+    <p>The main living space is a single open volume: kitchen, dining, and sitting room flowing into one another under a 4-metre arch, with floor-to-ceiling glass facing the sea.</p>
+  </div>
+</div>
+
+<div class="editorial">
+  <div class="editorial-img">
+    <img src="https://images.pexels.com/photos/17271499/pexels-photo-17271499.jpeg?auto=compress&cs=tinysrgb&w=900&q=80" alt="Santorini caldera view at sunset from Villa Caldera" loading="lazy">
+  </div>
+  <div class="editorial-text dark">
+    <p class="eyebrow" style="color:var(--terracotta)">The Location</p>
+    <h3>On the Rim of the Caldera, Oia</h3>
+    <p>Oia is the island's most celebrated village and the setting for Santorini's famous sunsets. Villa Caldera sits on the caldera-facing cliffside, a 12-minute walk from the village centre.</p>
+    <a href="#gallery" class="btn btn-outline-light" style="margin-top:8px;">View Gallery</a>
+  </div>
+</div>
+
+<section id="amenities">
+  <div class="section-inner">
+    <div class="amenities-header fade-in">
+      <p class="eyebrow">The Details</p>
+      <h2>Everything You Need</h2>
+    </div>
+    <div class="amenities-grid fade-in">
+      <div class="amenity"><div class="amenity-icon"></div><span class="amenity-name">Infinity Pool</span><p class="amenity-desc">12m heated, caldera-facing, private sun terrace and daybeds</p></div>
+      <div class="amenity"><div class="amenity-icon"></div><span class="amenity-name">4 Bedroom Suites</span><p class="amenity-desc">Vaulted Cycladic architecture, 2 with direct caldera terraces</p></div>
+      <div class="amenity"><div class="amenity-icon"></div><span class="amenity-name">Caldera Views</span><p class="amenity-desc">180° panorama from pool, living space and two master terraces</p></div>
+      <div class="amenity"><div class="amenity-icon"></div><span class="amenity-name">Full Kitchen</span><p class="amenity-desc">Marble island, professional appliances, open-plan dining</p></div>
+      <div class="amenity"><div class="amenity-icon"></div><span class="amenity-name">Air Conditioning</span><p class="amenity-desc">All rooms and living spaces, plus natural cave-cool architecture</p></div>
+      <div class="amenity"><div class="amenity-icon"></div><span class="amenity-name">High-Speed WiFi</span><p class="amenity-desc">Fibre throughout the property and on the pool terrace</p></div>
+      <div class="amenity"><div class="amenity-icon"></div><span class="amenity-name">Concierge</span><p class="amenity-desc">Private chef, car hire, boat trips — arranged on request</p></div>
+      <div class="amenity"><div class="amenity-icon"></div><span class="amenity-name">Outdoor Dining</span><p class="amenity-desc">Terrace table for 8, BBQ, caldera views at every meal</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="gallery-hero">
+    <p class="eyebrow" style="color:var(--terracotta)">Gallery</p>
+    <h2>Villa Caldera in Pictures</h2>
+    <p style="color:var(--stone); margin-top:8px;">Click any image to explore</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="https://images.pexels.com/photos/1010640/pexels-photo-1010640.jpeg?auto=compress&cs=tinysrgb&w=900&q=75" alt="Villa Caldera caldera panorama, Oia Santorini" loading="lazy"></div>
+    <div class="gallery-item"><img src="https://images.pexels.com/photos/6507846/pexels-photo-6507846.jpeg?auto=compress&cs=tinysrgb&w=900&q=75" alt="Santorini infinity pool serene" loading="lazy"></div>
+    <div class="gallery-item"><img src="https://images.pexels.com/photos/15532995/pexels-photo-15532995.jpeg?auto=compress&cs=tinysrgb&w=900&q=75" alt="Santorini blue dome church" loading="lazy"></div>
+    <div class="gallery-item"><img src="https://images.pexels.com/photos/10508875/pexels-photo-10508875.jpeg?auto=compress&cs=tinysrgb&w=900&q=75" alt="Oia cliffside resort pool Santorini" loading="lazy"></div>
+    <div class="gallery-item"><img src="https://images.pexels.com/photos/33851769/pexels-photo-33851769.jpeg?auto=compress&cs=tinysrgb&w=900&q=75" alt="Blue dome church overlooking Santorini coast" loading="lazy"></div>
+    <div class="gallery-item"><img src="https://images.pexels.com/photos/10611832/pexels-photo-10611832.jpeg?auto=compress&cs=tinysrgb&w=900&q=75" alt="Santorini white buildings at sunset" loading="lazy"></div>
+    <div class="gallery-item"><img src="https://images.pexels.com/photos/15238390/pexels-photo-15238390.jpeg?auto=compress&cs=tinysrgb&w=900&q=75" alt="Santorini aerial view at sunset" loading="lazy"></div>
+    <div class="gallery-item"><img src="https://images.pexels.com/photos/15532710/pexels-photo-15532710.jpeg?auto=compress&cs=tinysrgb&w=900&q=75" alt="Santorini white architecture with pools" loading="lazy"></div>
+    <div class="gallery-item"><img src="https://images.pexels.com/photos/6604243/pexels-photo-6604243.jpeg?auto=compress&cs=tinysrgb&w=900&q=75" alt="Colorful houses in Oia Santorini" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="reviews" class="section">
+  <div class="section-inner">
+    <div class="reviews-header fade-in">
+      <p class="eyebrow">Guest Reviews</p>
+      <div class="reviews-score">
+        <span class="score-big">4.97</span>
+        <div class="score-detail">
+          <div class="score-stars">★★★★★</div>
+          <div>34 reviews on Airbnb</div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-grid fade-in">
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <p class="review-text">The view from the pool is indescribable. We watched the sunset from the infinity edge every single evening. Absolutely nothing compares — and having it completely to ourselves made it perfect.</p>
+        <div class="review-author">Sophie & Marcus L.</div>
+        <div class="review-meta">London · July 2025</div>
+      </div>
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <p class="review-text">We've stayed in many villas across the Mediterranean. Villa Caldera is the first where the photos actually undersell the experience. The caldera at dawn, from the pool, is something we will never forget.</p>
+        <div class="review-author">Giulia M.</div>
+        <div class="review-meta">Milan · September 2025</div>
+      </div>
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <p class="review-text">Booking directly was seamless — fast responses, flexible arrival, a bottle of local wine waiting. The villa itself is exactly what Santorini should feel like: white, quiet, and stunning from every angle.</p>
+        <div class="review-author">Thomas & Claire R.</div>
+        <div class="review-meta">Paris · August 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="location" class="section">
+  <div class="section-inner">
+    <p class="eyebrow">Where to Find Us</p>
+    <h2>Oia, Santorini</h2>
+    <div class="location-grid fade-in">
+      <div class="location-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2!2d25.3753!3d36.4618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDI3JzQyLjUiTiAyNcKwMjInMzEuMSJF!5e0!3m2!1sen!2sgr!4v1" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="distances">
+        <p>Villa Caldera sits on the caldera rim above Oia — Santorini's most celebrated village and the island's iconic sunset point. The airport is 25 minutes by taxi.</p>
+        <div class="distance-item"><div class="distance-dot"></div><span class="distance-name">Oia Village Centre</span><span class="distance-time">12 min walk</span></div>
+        <div class="distance-item"><div class="distance-dot"></div><span class="distance-name">Santorini Airport (JTR)</span><span class="distance-time">25 min drive</span></div>
+        <div class="distance-item"><div class="distance-dot"></div><span class="distance-name">Fira (island capital)</span><span class="distance-time">20 min drive</span></div>
+        <div class="distance-item"><div class="distance-dot"></div><span class="distance-name">Amoudi Bay (port)</span><span class="distance-time">8 min walk</span></div>
+        <div class="distance-item"><div class="distance-dot"></div><span class="distance-name">Perivolos Beach</span><span class="distance-time">30 min drive</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="section">
+  <div class="book-inner">
+    <p class="eyebrow">Reserve Your Stay</p>
+    <h2>Book Villa Caldera</h2>
+    <p class="subtitle">Book directly with us and save 10% vs Airbnb. We reply within 24 hours.</p>
+    <div class="book-grid fade-in">
+      <div class="book-option">
+        <p class="eyebrow book-option-eyebrow">Recommended</p>
+        <div class="saving">Save 10%</div>
+        <span class="book-option-title">Book Direct</span>
+        <p class="book-option-text">Write to us directly. Best rate guaranteed, flexible terms, personal service.</p>
+        <a href="https://wa.me/306940000001?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20Villa%20Caldera" class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+      <div class="book-option">
+        <p class="eyebrow book-option-eyebrow">Also Available</p>
+        <span class="book-option-title">Via Airbnb</span>
+        <p class="book-option-text">Prefer to book through a platform? We're on Airbnb with 5-star ratings.</p>
+        <a href="https://www.airbnb.com/rooms/villa-caldera-santorini" class="btn btn-outline-dark" target="_blank" rel="noopener">View on Airbnb</a>
+      </div>
+    </div>
+    <div class="enquiry-form-wrap fade-in">
+      <p class="eyebrow" style="text-align:center; margin-bottom:32px;">Or Send an Enquiry</p>
+      <form class="enquiry-form" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="enquiry">
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <div class="form-row">
+          <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" required placeholder="Your name"></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="your@email.com"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="checkin">Check-in</label><input type="date" id="checkin" name="checkin"></div>
+          <div class="form-group"><label for="checkout">Check-out</label><input type="date" id="checkout" name="checkout"></div>
+          <div class="form-group"><label for="guests">Guests</label><select id="guests" name="guests"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+        </div>
+        <div class="form-group"><label for="message">Message (optional)</label><textarea id="message" name="message" placeholder="Any questions or special requests?"></textarea></div>
+        <button type="submit" class="btn btn-dark form-submit">Send Enquiry →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo">Villa Caldera</span>
+      <p>Private luxury villa on the caldera rim, Oia, Santorini.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="#about">The Villa</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#book">Book Direct</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li style="margin-top:16px; font-size:0.78rem; letter-spacing:1px; color:var(--stone); line-height:1.8;">Oia 847 02<br>Santorini · Greece</li>
+        <li style="margin-top:12px;"><a href="mailto:info@villacaldera.gr">info@villacaldera.gr</a></li>
+        <li><a href="https://www.instagram.com/villacaldera" target="_blank">Instagram</a></li>
+        <li><a href="https://www.airbnb.com/rooms/villa-caldera-santorini" target="_blank">Airbnb</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Villa Caldera. All rights reserved.</span>
+    <span style="font-size:0.65rem; opacity:0.4;">Built by <a href="https://islastudio.io" style="color:inherit;">Isla Studio</a></span>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner">
+  <p>We use cookies to improve your experience. <a href="#">Learn more</a>.</p>
+  <button class="btn btn-outline-light cookie-accept" onclick="document.getElementById('cookieBanner').style.display='none'; localStorage.setItem('cookie_ok','1')">Accept</button>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  if (!localStorage.getItem('cookie_ok')) {
+    setTimeout(() => document.getElementById('cookieBanner').classList.add('visible'), 1500);
+  }
+</script>
+</body>
+</html>
