@@ -46,7 +46,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap"></noscript>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=202604260851">
   <style>
     /* ── CYCLADIC MINIMAL — Villa Caldera override ── */
     :root {
@@ -123,7 +123,7 @@
       <a href="#gallery" class="btn btn-outline-light">View Gallery</a>
     </div>
   </div>
-  <div class="hero-scroll" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+  <button type="button" class="hero-scroll" aria-label="Scroll to next section" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
     <span>Scroll</span>
     <div class="scroll-line"></div>
   </div>
@@ -300,12 +300,12 @@
     </div>
     <div class="enquiry-form-wrap fade-in">
       <p class="eyebrow" style="text-align:center; margin-bottom:32px;">Or Send an Enquiry</p>
-      <form class="enquiry-form" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="enquiry">
+      <form class="enquiry-form" id="enquiryForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="fb13f97d-7384-4cb9-a465-bb026edaa5e3">
         <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
         <div class="form-row">
-          <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" required placeholder="Your name"></div>
-          <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="your@email.com"></div>
+          <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name"></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email"></div>
         </div>
         <div class="form-row">
           <div class="form-group"><label for="checkin">Check-in</label><input type="date" id="checkin" name="checkin"></div>
